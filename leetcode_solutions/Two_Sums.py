@@ -24,4 +24,15 @@ class Solution:
                 return [i,prev_val[current]]
             
             prev_val[n]=i
+
+def __main__():
+    
+    sol=Solution()
+    lista=[2,24,6,-1,4]
+    target=28
+    print(sol.twoSum(lista, target))
+
+if __main__():
+    __main__()
+    
                 
