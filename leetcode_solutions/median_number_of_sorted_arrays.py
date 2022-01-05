@@ -20,5 +20,7 @@ class Solution:
             return output
         
         return total[len(total)//2]
+    
+
         
         

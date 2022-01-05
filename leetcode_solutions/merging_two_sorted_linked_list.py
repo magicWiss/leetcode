@@ -35,10 +35,13 @@ class Solution:
             
         if(first==None):
             iteratore_res.next=second
-        elif(second==None):
+            return risultato.next
+
+        if(second==None):
             iteratore_res.next=first
+            return risultato.next
+
             
-        return risultato.next
                 
         
         
