@@ -9,6 +9,8 @@ Si espande a destra e sinistra analizzando i caratteri nell'INTORNO, verificando
 essere palindroma.
 
 '''
+
+
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         
@@ -20,7 +22,7 @@ class Solution:
             #dispari
             dx,sx=i,i                     #iteratori a dx e sx
             
-            while dx<len(s) and sx>=0 and s[dx]==s[sx]:        #finchè siamo nella stringa s e la sub è palindorma
+            while dx<len(s) and sx>=0 and s[dx]==s[sx]:        
                 
                 #aggiorno la sub
                 if(max_len< dx-sx+1):
@@ -34,7 +36,7 @@ class Solution:
             
             dx,sx=i+1,i                     #iteratori a dx e sx
             
-            while dx<len(s) and sx>=0 and s[dx]==s[sx]:        #finchè siamo nella stringa s e la sub è palindorma
+            while dx<len(s) and sx>=0 and s[dx]==s[sx]:        
                 
                 #aggiorno la sub
                 if(max_len< dx-sx+1):
@@ -44,5 +46,6 @@ class Solution:
                 sx-=1
                 dx+=1
             
-        return stringa_out        
+        return stringa_out    
+    
 
