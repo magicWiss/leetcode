@@ -47,4 +47,4 @@ class Solution:
 
             if I[i-1]>=0:
                 return i
-        return len(I)
+        return len(I)+1
