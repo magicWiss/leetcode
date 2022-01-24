@@ -14,7 +14,7 @@ class Solution:
             return 1
         left=self.minDepth(root.left)
         right=self.minDepth(root.right)
-        if right*left==0:
+        if right*left==0: 
             if left==0:
                 depth=depth+right
             
