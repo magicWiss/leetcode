@@ -17,7 +17,7 @@ class Solution:
 
             if i+majority < len(nums):
 
-                if nums[i]==nums[i+majority-1]:
+                if nums[i]==nums[i+majority]:
                     return nums[i]
             
             i=i+1
