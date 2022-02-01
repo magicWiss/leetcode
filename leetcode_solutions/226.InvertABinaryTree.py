@@ -7,20 +7,7 @@
 #         self.right = right
 class Solution:
 
-    def invertTreeRic(self, new, old):
-
-        if old==None:
-            new=old
-            return new
-        
-        
-        
-        new=old
-        self.invertTreeRic(new.left,old.right)            
-        self.invertTreeRic(new.right,old.left)
-
-        return new
-        
+    
         
     def invertTree(self, root):
 
