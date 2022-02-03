@@ -14,24 +14,14 @@ the first bad version. You should minimize the number of calls to the API.
 # def isBadVersion(version: int) -> bool:
 
 class Solution:
-    def firstBadVersion(self, n: int) -> int:
-        
-        while True:
-
-            versionCorr=isBadVersion(n)
-
-            if versionCorr:
-                if not isBadVersion(n-1):
-                    return n
-                
-                if isBadVersion(n-1):
-                    n=n//2
-            
-            if not versionCorr:
-
-                if  isBadVersion(n+1):
-                    return n+1
-                if not isBadVersion(n+1):
-                    n=n+2
+    def firstBadVersion(self, n) -> int:
+        left, right = 1, n
+        while left < right:
+            mid = left + (right - left) // 2
+            if isBadVersion(mid):
+                right = mid
+            else:
+                left = mid + 1
+        return left
 
             
