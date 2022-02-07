@@ -5,7 +5,7 @@ Each element in the result must appear as many times as it shows in both arrays 
 Suppose that nums1 or nums2 has a lenght much greather then the other
 Condition: len(nums1||nums2) >>>>>>>len( nums2||nums1)
 
-The algo is much slower when working with sizes of inputs pretty much simular
+The algo is much slower when working with sizes of inputs pretty much similar
 '''
 class Solution:
     def intersect(self, nums1, nums2):
