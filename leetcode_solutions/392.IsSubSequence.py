@@ -12,7 +12,7 @@ class Solution:
             return True
         if len(s)>len(t):
             return False
-        r=set(s)
+       
 
         i,j=0,0
         while i<len(s) and j<len(t):
